@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+@@include('html/head.html',{
+    "title":"Главная страница"
+})
 <body>
+    @@include('html/header.html',{})
+    <main>
+        <img src="@img/zhivotnye_sobaka_Novyj_god_husky_11824.jpg" alt="">
+    </main>
+    @@include('html/footer.html',{})
     
 </body>
 </html>
