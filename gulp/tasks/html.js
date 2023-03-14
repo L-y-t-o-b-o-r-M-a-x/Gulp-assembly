@@ -8,8 +8,7 @@ export const html = () => {
             app.plugins.notify.onError({
                 title: "HTML",
                 message: "Error: <%= error.message %>"
-            }))
-            )
+            })))
         .pipe(fileInclude())
         .pipe(app.plugins.replace(/@img\//g, 'img/'))
         .pipe(webpHtmlNosvg())
